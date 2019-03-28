@@ -7,3 +7,9 @@ This repository contains code and material linked to presentations given by Naut
 [Link to README](QGISUG_SW_March_2019/README.md)
 
 [Link to files](QGISUG_SW_March_2019)
+
+## Project Madeline Launch 28th March 2019
+
+[Link to presentation](Project Madeline/Project Madeline Gathering.pptx)
+
+[Link to README](Project Madeline/README.md)
