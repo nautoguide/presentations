@@ -1,0 +1,385 @@
+<!DOCTYPE model>
+<Option type="Map">
+  <Option type="Map" name="children">
+    <Option type="Map" name="native:buffer_1">
+      <Option value="true" type="bool" name="active"/>
+      <Option name="alg_config"/>
+      <Option value="native:buffer" type="QString" name="alg_id"/>
+      <Option value="Buffer" type="QString" name="component_description"/>
+      <Option value="1117.3333333333333" type="double" name="component_pos_x"/>
+      <Option value="794.6666666666666" type="double" name="component_pos_y"/>
+      <Option name="dependencies"/>
+      <Option value="native:buffer_1" type="QString" name="id"/>
+      <Option type="Map" name="outputs">
+        <Option type="Map" name="buffered_la_boundary">
+          <Option value="native:buffer_1" type="QString" name="child_id"/>
+          <Option value="buffered_la_boundary" type="QString" name="component_description"/>
+          <Option value="1317.3333333333333" type="double" name="component_pos_x"/>
+          <Option value="839.6666666666666" type="double" name="component_pos_y"/>
+          <Option type="invalid" name="default_value"/>
+          <Option value="false" type="bool" name="mandatory"/>
+          <Option value="buffered_la_boundary" type="QString" name="name"/>
+          <Option value="OUTPUT" type="QString" name="output_name"/>
+        </Option>
+      </Option>
+      <Option value="true" type="bool" name="outputs_collapsed"/>
+      <Option value="true" type="bool" name="parameters_collapsed"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="DISSOLVE">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="false" type="bool" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="DISTANCE">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="50" type="double" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="END_CAP_STYLE">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="0" type="int" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="INPUT">
+          <Option type="Map">
+            <Option value="native:reprojectlayer_1" type="QString" name="child_id"/>
+            <Option value="OUTPUT" type="QString" name="output_name"/>
+            <Option value="1" type="int" name="source"/>
+          </Option>
+        </Option>
+        <Option type="List" name="JOIN_STYLE">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="0" type="int" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="MITER_LIMIT">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="2" type="double" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="SEGMENTS">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="5" type="int" name="static_value"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option type="Map" name="native:fixgeometries_1">
+      <Option value="true" type="bool" name="active"/>
+      <Option name="alg_config"/>
+      <Option value="native:fixgeometries" type="QString" name="alg_id"/>
+      <Option value="Fix geometries Local Authorities" type="QString" name="component_description"/>
+      <Option value="773.441327160494" type="double" name="component_pos_x"/>
+      <Option value="352.20111111111123" type="double" name="component_pos_y"/>
+      <Option name="dependencies"/>
+      <Option value="native:fixgeometries_1" type="QString" name="id"/>
+      <Option name="outputs"/>
+      <Option value="true" type="bool" name="outputs_collapsed"/>
+      <Option value="true" type="bool" name="parameters_collapsed"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="INPUT">
+          <Option type="Map">
+            <Option value="localauthorityboundaries" type="QString" name="parameter_name"/>
+            <Option value="0" type="int" name="source"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option type="Map" name="native:joinattributestable_1">
+      <Option value="true" type="bool" name="active"/>
+      <Option name="alg_config"/>
+      <Option value="native:joinattributestable" type="QString" name="alg_id"/>
+      <Option value="Add population figures to local authority" type="QString" name="component_description"/>
+      <Option value="766.6666666666665" type="double" name="component_pos_x"/>
+      <Option value="659.9999999999997" type="double" name="component_pos_y"/>
+      <Option type="StringList" name="dependencies">
+        <Option value="qgis:postgisexecuteandloadsql_1" type="QString"/>
+      </Option>
+      <Option value="native:joinattributestable_1" type="QString" name="id"/>
+      <Option name="outputs"/>
+      <Option value="true" type="bool" name="outputs_collapsed"/>
+      <Option value="true" type="bool" name="parameters_collapsed"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="DISCARD_NONMATCHING">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="true" type="bool" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="FIELD">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="lad17cd" type="QString" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="FIELDS_TO_COPY">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option type="invalid" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="FIELD_2">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="code" type="QString" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="INPUT">
+          <Option type="Map">
+            <Option value="native:fixgeometries_1" type="QString" name="child_id"/>
+            <Option value="OUTPUT" type="QString" name="output_name"/>
+            <Option value="1" type="int" name="source"/>
+          </Option>
+        </Option>
+        <Option type="List" name="INPUT_2">
+          <Option type="Map">
+            <Option value="qgis:postgisexecuteandloadsql_1" type="QString" name="child_id"/>
+            <Option value="OUTPUT" type="QString" name="output_name"/>
+            <Option value="1" type="int" name="source"/>
+          </Option>
+        </Option>
+        <Option type="List" name="METHOD">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="1" type="int" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="PREFIX">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="" type="QString" name="static_value"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option type="Map" name="native:reprojectlayer_1">
+      <Option value="true" type="bool" name="active"/>
+      <Option name="alg_config"/>
+      <Option value="native:reprojectlayer" type="QString" name="alg_id"/>
+      <Option value="Reproject layer" type="QString" name="component_description"/>
+      <Option value="1177.3333333333333" type="double" name="component_pos_x"/>
+      <Option value="696" type="double" name="component_pos_y"/>
+      <Option name="dependencies"/>
+      <Option value="native:reprojectlayer_1" type="QString" name="id"/>
+      <Option name="outputs"/>
+      <Option value="true" type="bool" name="outputs_collapsed"/>
+      <Option value="true" type="bool" name="parameters_collapsed"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="INPUT">
+          <Option type="Map">
+            <Option value="native:joinattributestable_1" type="QString" name="child_id"/>
+            <Option value="OUTPUT" type="QString" name="output_name"/>
+            <Option value="1" type="int" name="source"/>
+          </Option>
+        </Option>
+        <Option type="List" name="TARGET_CRS">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option type="QgsCoordinateReferenceSystem" name="static_value">
+              <spatialrefsys>
+                <proj4>+proj=tmerc +lat_0=49 +lon_0=-2 +k=0.9996012717 +x_0=400000 +y_0=-100000 +ellps=airy +towgs84=446.448,-125.157,542.06,0.15,0.247,0.842,-20.489 +units=m +no_defs</proj4>
+                <srsid>2437</srsid>
+                <srid>27700</srid>
+                <authid>EPSG:27700</authid>
+                <description>OSGB 1936 / British National Grid</description>
+                <projectionacronym>tmerc</projectionacronym>
+                <ellipsoidacronym>airy</ellipsoidacronym>
+                <geographicflag>false</geographicflag>
+              </spatialrefsys>
+            </Option>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option type="Map" name="qgis:importintopostgis_1">
+      <Option value="true" type="bool" name="active"/>
+      <Option name="alg_config"/>
+      <Option value="qgis:importintopostgis" type="QString" name="alg_id"/>
+      <Option value="Export to PostgreSQL" type="QString" name="component_description"/>
+      <Option value="271.9776543209877" type="double" name="component_pos_x"/>
+      <Option value="447.0279320987653" type="double" name="component_pos_y"/>
+      <Option name="dependencies"/>
+      <Option value="qgis:importintopostgis_1" type="QString" name="id"/>
+      <Option name="outputs"/>
+      <Option value="true" type="bool" name="outputs_collapsed"/>
+      <Option value="true" type="bool" name="parameters_collapsed"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="CREATEINDEX">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="false" type="bool" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="DATABASE">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="LOCAL POSTGRES" type="QString" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="DROP_STRING_LENGTH">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="false" type="bool" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="ENCODING">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="UTF-8" type="QString" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="FORCE_SINGLEPART">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="false" type="bool" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="GEOMETRY_COLUMN">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="geom" type="QString" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="INPUT">
+          <Option type="Map">
+            <Option value="onslocalauthoirtypopulationforecasts" type="QString" name="parameter_name"/>
+            <Option value="0" type="int" name="source"/>
+          </Option>
+        </Option>
+        <Option type="List" name="LOWERCASE_NAMES">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="true" type="bool" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="OVERWRITE">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="true" type="bool" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="PRIMARY_KEY">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option type="invalid" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="SCHEMA">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="public" type="QString" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="TABLENAME">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="local_authority_population_forecasts" type="QString" name="static_value"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option type="Map" name="qgis:postgisexecuteandloadsql_1">
+      <Option value="true" type="bool" name="active"/>
+      <Option name="alg_config"/>
+      <Option value="qgis:postgisexecuteandloadsql" type="QString" name="alg_id"/>
+      <Option value="Group and summarise population" type="QString" name="component_description"/>
+      <Option value="347.1865925925925" type="double" name="component_pos_x"/>
+      <Option value="566.1690864197528" type="double" name="component_pos_y"/>
+      <Option type="StringList" name="dependencies">
+        <Option value="qgis:importintopostgis_1" type="QString"/>
+      </Option>
+      <Option value="qgis:postgisexecuteandloadsql_1" type="QString" name="id"/>
+      <Option name="outputs"/>
+      <Option value="false" type="bool" name="outputs_collapsed"/>
+      <Option value="true" type="bool" name="parameters_collapsed"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="DATABASE">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="LOCAL POSTGRES" type="QString" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="GEOMETRY_FIELD">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="geom" type="QString" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="ID_FIELD">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="code" type="QString" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="SQL">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="&#xa;SELECT &#xa;&#x9;&#x9;distinct code,&#xa;&#x9;&#x9;ST_GEOMFROMEWKT('SRID=4326;POINT(0 0)') as geom,&#xa;&#xa;&#x9;&#x9; sum(REPLACE(&quot;2016&quot;, ',','')::NUMERIC) FILTER (WHERE &quot;age group&quot; IN ('20-24', '25-29','30-34','35-39','40-44', '45-49','50-54', '55-59','60-64','65-69','70-74','75-79','80-84','85-89', '90+')) OVER (PARTITION BY code) +&#xa;        (sum(REPLACE(&quot;2016&quot;, ',','')::NUMERIC) FILTER (WHERE &quot;age group&quot; IN ('15-19')) OVER (PARTITION BY code)) * 0.4 AS voters_2016,&#xa;        sum(REPLACE(&quot;2017&quot;, ',','')::NUMERIC) FILTER (WHERE &quot;age group&quot; IN ('20-24', '25-29','30-34','35-39','40-44', '45-49','50-54', '55-59','60-64','65-69','70-74','75-79','80-84','85-89', '90+')) OVER (PARTITION BY code) +&#xa;        (sum(REPLACE(&quot;2017&quot;, ',','')::NUMERIC) FILTER (WHERE &quot;age group&quot; IN ('15-19')) OVER (PARTITION BY code)) * 0.4 AS voters_2017,&#xa;        sum(REPLACE(&quot;2018&quot;, ',','')::NUMERIC) FILTER (WHERE &quot;age group&quot; IN ('20-24', '25-29','30-34','35-39','40-44', '45-49','50-54', '55-59','60-64','65-69','70-74','75-79','80-84','85-89', '90+')) OVER (PARTITION BY code) +&#xa;        (sum(REPLACE(&quot;2018&quot;, ',','')::NUMERIC) FILTER (WHERE &quot;age group&quot; IN ('15-19')) OVER (PARTITION BY code)) * 0.4 AS voters_2018,&#xa;        sum(REPLACE(&quot;2019&quot;, ',','')::NUMERIC) FILTER (WHERE &quot;age group&quot; IN ('20-24', '25-29','30-34','35-39','40-44', '45-49','50-54', '55-59','60-64','65-69','70-74','75-79','80-84','85-89', '90+')) OVER (PARTITION BY code) +&#xa;        (sum(REPLACE(&quot;2019&quot;, ',','')::NUMERIC) FILTER (WHERE &quot;age group&quot; IN ('15-19')) OVER (PARTITION BY code)) * 0.4 AS voters_2019,&#xa;        sum(REPLACE(&quot;2020&quot;, ',','')::NUMERIC) FILTER (WHERE &quot;age group&quot; IN ('20-24', '25-29','30-34','35-39','40-44', '45-49','50-54', '55-59','60-64','65-69','70-74','75-79','80-84','85-89', '90+')) OVER (PARTITION BY code) +&#xa;        (sum(REPLACE(&quot;2020&quot;, ',','')::NUMERIC) FILTER (WHERE &quot;age group&quot; IN ('15-19')) OVER (PARTITION BY code)) * 0.4 AS voters_2020,&#xa;        sum(REPLACE(&quot;2021&quot;, ',','')::NUMERIC) FILTER (WHERE &quot;age group&quot; IN ('20-24', '25-29','30-34','35-39','40-44', '45-49','50-54', '55-59','60-64','65-69','70-74','75-79','80-84','85-89', '90+')) OVER (PARTITION BY code) +&#xa;        (sum(REPLACE(&quot;2021&quot;, ',','')::NUMERIC) FILTER (WHERE &quot;age group&quot; IN ('15-19')) OVER (PARTITION BY code)) * 0.4 AS voters_2021,&#xa;        sum(REPLACE(&quot;2022&quot;, ',','')::NUMERIC) FILTER (WHERE &quot;age group&quot; IN ('20-24', '25-29','30-34','35-39','40-44', '45-49','50-54', '55-59','60-64','65-69','70-74','75-79','80-84','85-89', '90+')) OVER (PARTITION BY code) +&#xa;        (sum(REPLACE(&quot;2022&quot;, ',','')::NUMERIC) FILTER (WHERE &quot;age group&quot; IN ('15-19')) OVER (PARTITION BY code)) * 0.4 AS voters_2022,&#xa;        sum(REPLACE(&quot;2023&quot;, ',','')::NUMERIC) FILTER (WHERE &quot;age group&quot; IN ('20-24', '25-29','30-34','35-39','40-44', '45-49','50-54', '55-59','60-64','65-69','70-74','75-79','80-84','85-89', '90+')) OVER (PARTITION BY code) +&#xa;        (sum(REPLACE(&quot;2023&quot;, ',','')::NUMERIC) FILTER (WHERE &quot;age group&quot; IN ('15-19')) OVER (PARTITION BY code)) * 0.4 AS voters_2023,&#xa;        sum(REPLACE(&quot;2024&quot;, ',','')::NUMERIC) FILTER (WHERE &quot;age group&quot; IN ('20-24', '25-29','30-34','35-39','40-44', '45-49','50-54', '55-59','60-64','65-69','70-74','75-79','80-84','85-89', '90+')) OVER (PARTITION BY code) +&#xa;        (sum(REPLACE(&quot;2024&quot;, ',','')::NUMERIC) FILTER (WHERE &quot;age group&quot; IN ('15-19')) OVER (PARTITION BY code)) * 0.4 AS voters_2024,&#xa;        sum(REPLACE(&quot;2025&quot;, ',','')::NUMERIC) FILTER (WHERE &quot;age group&quot; IN ('20-24', '25-29','30-34','35-39','40-44', '45-49','50-54', '55-59','60-64','65-69','70-74','75-79','80-84','85-89', '90+')) OVER (PARTITION BY code) +&#xa;        (sum(REPLACE(&quot;2025&quot;, ',','')::NUMERIC) FILTER (WHERE &quot;age group&quot; IN ('15-19')) OVER (PARTITION BY code)) * 0.4 AS voters_2025,&#xa;        sum(REPLACE(&quot;2026&quot;, ',','')::NUMERIC) FILTER (WHERE &quot;age group&quot; IN ('20-24', '25-29','30-34','35-39','40-44', '45-49','50-54', '55-59','60-64','65-69','70-74','75-79','80-84','85-89', '90+')) OVER (PARTITION BY code) +&#xa;        (sum(REPLACE(&quot;2026&quot;, ',','')::NUMERIC) FILTER (WHERE &quot;age group&quot; IN ('15-19')) OVER (PARTITION BY code)) * 0.4 AS voters_2026,&#xa;        sum(REPLACE(&quot;2027&quot;, ',','')::NUMERIC) FILTER (WHERE &quot;age group&quot; IN ('20-24', '25-29','30-34','35-39','40-44', '45-49','50-54', '55-59','60-64','65-69','70-74','75-79','80-84','85-89', '90+')) OVER (PARTITION BY code) +&#xa;        (sum(REPLACE(&quot;2027&quot;, ',','')::NUMERIC) FILTER (WHERE &quot;age group&quot; IN ('15-19')) OVER (PARTITION BY code)) * 0.4 AS voters_2027,&#xa;        sum(REPLACE(&quot;2028&quot;, ',','')::NUMERIC) FILTER (WHERE &quot;age group&quot; IN ('20-24', '25-29','30-34','35-39','40-44', '45-49','50-54', '55-59','60-64','65-69','70-74','75-79','80-84','85-89', '90+')) OVER (PARTITION BY code) +&#xa;        (sum(REPLACE(&quot;2028&quot;, ',','')::NUMERIC) FILTER (WHERE &quot;age group&quot; IN ('15-19')) OVER (PARTITION BY code)) * 0.4 AS voters_2028,&#xa;        sum(REPLACE(&quot;2029&quot;, ',','')::NUMERIC) FILTER (WHERE &quot;age group&quot; IN ('20-24', '25-29','30-34','35-39','40-44', '45-49','50-54', '55-59','60-64','65-69','70-74','75-79','80-84','85-89', '90+')) OVER (PARTITION BY code) +&#xa;        (sum(REPLACE(&quot;2029&quot;, ',','')::NUMERIC) FILTER (WHERE &quot;age group&quot; IN ('15-19')) OVER (PARTITION BY code)) * 0.4 AS voters_2029,&#xa;        sum(REPLACE(&quot;2030&quot;, ',','')::NUMERIC) FILTER (WHERE &quot;age group&quot; IN ('20-24', '25-29','30-34','35-39','40-44', '45-49','50-54', '55-59','60-64','65-69','70-74','75-79','80-84','85-89', '90+')) OVER (PARTITION BY code) +&#xa;        (sum(REPLACE(&quot;2030&quot;, ',','')::NUMERIC) FILTER (WHERE &quot;age group&quot; IN ('15-19')) OVER (PARTITION BY code)) * 0.4 AS voters_2030,&#xa;        sum(REPLACE(&quot;2031&quot;, ',','')::NUMERIC) FILTER (WHERE &quot;age group&quot; IN ('20-24', '25-29','30-34','35-39','40-44', '45-49','50-54', '55-59','60-64','65-69','70-74','75-79','80-84','85-89', '90+')) OVER (PARTITION BY code) +&#xa;        (sum(REPLACE(&quot;2031&quot;, ',','')::NUMERIC) FILTER (WHERE &quot;age group&quot; IN ('15-19')) OVER (PARTITION BY code)) * 0.4 AS voters_2031,&#xa;        sum(REPLACE(&quot;2032&quot;, ',','')::NUMERIC) FILTER (WHERE &quot;age group&quot; IN ('20-24', '25-29','30-34','35-39','40-44', '45-49','50-54', '55-59','60-64','65-69','70-74','75-79','80-84','85-89', '90+')) OVER (PARTITION BY code) +&#xa;        (sum(REPLACE(&quot;2032&quot;, ',','')::NUMERIC) FILTER (WHERE &quot;age group&quot; IN ('15-19')) OVER (PARTITION BY code)) * 0.4 AS voters_2032,&#xa;        sum(REPLACE(&quot;2033&quot;, ',','')::NUMERIC) FILTER (WHERE &quot;age group&quot; IN ('20-24', '25-29','30-34','35-39','40-44', '45-49','50-54', '55-59','60-64','65-69','70-74','75-79','80-84','85-89', '90+')) OVER (PARTITION BY code) +&#xa;        (sum(REPLACE(&quot;2033&quot;, ',','')::NUMERIC) FILTER (WHERE &quot;age group&quot; IN ('15-19')) OVER (PARTITION BY code)) * 0.4 AS voters_2033,&#xa;        sum(REPLACE(&quot;2034&quot;, ',','')::NUMERIC) FILTER (WHERE &quot;age group&quot; IN ('20-24', '25-29','30-34','35-39','40-44', '45-49','50-54', '55-59','60-64','65-69','70-74','75-79','80-84','85-89', '90+')) OVER (PARTITION BY code) +&#xa;        (sum(REPLACE(&quot;2034&quot;, ',','')::NUMERIC) FILTER (WHERE &quot;age group&quot; IN ('15-19')) OVER (PARTITION BY code)) * 0.4 AS voters_2034,&#xa;        sum(REPLACE(&quot;2035&quot;, ',','')::NUMERIC) FILTER (WHERE &quot;age group&quot; IN ('20-24', '25-29','30-34','35-39','40-44', '45-49','50-54', '55-59','60-64','65-69','70-74','75-79','80-84','85-89', '90+')) OVER (PARTITION BY code) +&#xa;        (sum(REPLACE(&quot;2035&quot;, ',','')::NUMERIC) FILTER (WHERE &quot;age group&quot; IN ('15-19')) OVER (PARTITION BY code)) * 0.4 AS voters_2035,&#xa;        sum(REPLACE(&quot;2036&quot;, ',','')::NUMERIC) FILTER (WHERE &quot;age group&quot; IN ('20-24', '25-29','30-34','35-39','40-44', '45-49','50-54', '55-59','60-64','65-69','70-74','75-79','80-84','85-89', '90+')) OVER (PARTITION BY code) +&#xa;        (sum(REPLACE(&quot;2036&quot;, ',','')::NUMERIC) FILTER (WHERE &quot;age group&quot; IN ('15-19')) OVER (PARTITION BY code)) * 0.4 AS voters_2036,&#xa;        sum(REPLACE(&quot;2037&quot;, ',','')::NUMERIC) FILTER (WHERE &quot;age group&quot; IN ('20-24', '25-29','30-34','35-39','40-44', '45-49','50-54', '55-59','60-64','65-69','70-74','75-79','80-84','85-89', '90+')) OVER (PARTITION BY code) +&#xa;        (sum(REPLACE(&quot;2037&quot;, ',','')::NUMERIC) FILTER (WHERE &quot;age group&quot; IN ('15-19')) OVER (PARTITION BY code)) * 0.4 AS voters_2037,&#xa;        sum(REPLACE(&quot;2038&quot;, ',','')::NUMERIC) FILTER (WHERE &quot;age group&quot; IN ('20-24', '25-29','30-34','35-39','40-44', '45-49','50-54', '55-59','60-64','65-69','70-74','75-79','80-84','85-89', '90+')) OVER (PARTITION BY code) +&#xa;        (sum(REPLACE(&quot;2038&quot;, ',','')::NUMERIC) FILTER (WHERE &quot;age group&quot; IN ('15-19')) OVER (PARTITION BY code)) * 0.4 AS voters_2038,&#xa;        sum(REPLACE(&quot;2039&quot;, ',','')::NUMERIC) FILTER (WHERE &quot;age group&quot; IN ('20-24', '25-29','30-34','35-39','40-44', '45-49','50-54', '55-59','60-64','65-69','70-74','75-79','80-84','85-89', '90+')) OVER (PARTITION BY code) +&#xa;        (sum(REPLACE(&quot;2039&quot;, ',','')::NUMERIC) FILTER (WHERE &quot;age group&quot; IN ('15-19')) OVER (PARTITION BY code)) * 0.4 AS voters_2039&#xa;        &#xa;FROM local_authority_population_forecasts" type="QString" name="static_value"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+  </Option>
+  <Option type="Map" name="help">
+    <Option value="" type="QString" name="ALG_CREATOR"/>
+    <Option value="" type="QString" name="ALG_DESC"/>
+  </Option>
+  <Option name="modelVariables"/>
+  <Option value="" type="QString" name="model_group"/>
+  <Option value="Add projection to LA boundary" type="QString" name="model_name"/>
+  <Option type="Map" name="parameterDefinitions">
+    <Option type="Map" name="localauthorityboundaries">
+      <Option type="List" name="data_types">
+        <Option value="5" type="int"/>
+      </Option>
+      <Option type="invalid" name="default"/>
+      <Option value="Local Authority Boundaries" type="QString" name="description"/>
+      <Option value="0" type="int" name="flags"/>
+      <Option name="metadata"/>
+      <Option value="localauthorityboundaries" type="QString" name="name"/>
+      <Option value="vector" type="QString" name="parameter_type"/>
+    </Option>
+    <Option type="Map" name="native:buffer_1:buffered_la_boundary">
+      <Option value="true" type="bool" name="create_by_default"/>
+      <Option value="2" type="int" name="data_type"/>
+      <Option type="invalid" name="default"/>
+      <Option value="buffered_la_boundary" type="QString" name="description"/>
+      <Option value="0" type="int" name="flags"/>
+      <Option name="metadata"/>
+      <Option value="native:buffer_1:buffered_la_boundary" type="QString" name="name"/>
+      <Option value="sink" type="QString" name="parameter_type"/>
+      <Option value="true" type="bool" name="supports_non_file_outputs"/>
+    </Option>
+    <Option type="Map" name="onslocalauthoirtypopulationforecasts">
+      <Option type="List" name="data_types">
+        <Option value="5" type="int"/>
+      </Option>
+      <Option type="invalid" name="default"/>
+      <Option value="ONS Local Authority Population Forecasts" type="QString" name="description"/>
+      <Option value="0" type="int" name="flags"/>
+      <Option name="metadata"/>
+      <Option value="onslocalauthoirtypopulationforecasts" type="QString" name="name"/>
+      <Option value="vector" type="QString" name="parameter_type"/>
+    </Option>
+  </Option>
+  <Option type="Map" name="parameters">
+    <Option type="Map" name="localauthorityboundaries">
+      <Option value="localauthorityboundaries" type="QString" name="component_description"/>
+      <Option value="201.33333333333334" type="double" name="component_pos_x"/>
+      <Option value="179.99999999999997" type="double" name="component_pos_y"/>
+      <Option value="localauthorityboundaries" type="QString" name="name"/>
+    </Option>
+    <Option type="Map" name="onslocalauthoirtypopulationforecasts">
+      <Option value="onslocalauthoirtypopulationforecasts" type="QString" name="component_description"/>
+      <Option value="181.33333333333331" type="double" name="component_pos_x"/>
+      <Option value="311.99999999999994" type="double" name="component_pos_y"/>
+      <Option value="onslocalauthoirtypopulationforecasts" type="QString" name="name"/>
+    </Option>
+  </Option>
+</Option>
