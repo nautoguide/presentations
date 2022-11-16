@@ -2,7 +2,7 @@
 import os
 import sys
 sys.path.append('/Applications/QGis.app/Contents/Resources/python/')
-#sys.path.append('/Applications/QGis.app/Contents/Resources/python/plugins') # if you want to use the processing module, for example
+#sys.path.append('/Applications/QGis.app/Contents/Resources/python/plugins') # for processing or plugins
 from qgis.core import *
 from qgis.gui import *
 
